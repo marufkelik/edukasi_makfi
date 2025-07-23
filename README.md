@@ -1,2 +1,2 @@
 # edukasi_makfi
-Project Tugas Pemrograman Webb I
+Project Tugas Pemrograman Web I

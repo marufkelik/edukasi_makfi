@@ -2421,6 +2421,7 @@ input[type="button"].btn-block {
   }
 }
 
+/*
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
   -webkit-transform: rotate(90deg);
@@ -2464,7 +2465,7 @@ input[type="button"].btn-block {
   -ms-transform: scale(1, -1);
   -o-transform: scale(1, -1);
   transform: scale(1, -1);
-}
+} */
 
 .fa-stack {
   position: relative;
@@ -4097,7 +4098,6 @@ input[type="button"].btn-block {
   text-decoration: none;
   background-color: transparent;
   background-image: none;
-  filter: progid:DXImage-transform@mixin Microsoft.gradient(enabled = false);
   cursor: not-allowed;
 }
 
@@ -6413,7 +6413,6 @@ body.modal-open,
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
-  *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#80000000', endColorstr='#00000000');
 }
 .carousel-control.right {
@@ -6424,7 +6423,6 @@ body.modal-open,
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
-  *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#00000000', endColorstr='#80000000');
 }
 .carousel-control:hover, .carousel-control:focus {

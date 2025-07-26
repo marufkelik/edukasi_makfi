@@ -402,20 +402,19 @@
   </section>
 
   <!-- end info_section -->
+  
 
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <div class="container">
-      <p>
+      <p id="time">
         &copy; 2019 All Rights Reserved By
         <a href="https://instagram/marufkelik">Marufkelik</a>
       </p>
     </div>
   </section>
   <!-- footer section -->
-	
-
-<script>
+	<script>
     document.getElementById("feedbackForm").addEventListener("submit", function(e) {
       e.preventDefault();
 
@@ -441,7 +440,18 @@
         document.getElementById("result").innerHTML = `<p style="color:red;">Terjadi kesalahan: ${error}</p>`;
       });
     });
+    
+    var timeDisplay = document.getElementById("time");
+      function refreshTime() {
+        var dateString = new Date().toLocaleString("en-US", {timeZone: "America/Sao_Paulo"});
+        var formattedString = dateString.replace(", ", " - ");
+        timeDisplay.innerHTML = formattedString;
+      }
+
+    setInterval(refreshTime, 1000);
   </script>
+
+
 
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
